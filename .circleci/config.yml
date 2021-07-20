@@ -50,10 +50,10 @@ jobs:
           command: ./vendor/bin/phpunit tests/Unit
 
       - run:
-	      name: "Create database and run migration"
-	      command: |
-	        touch database/database.sqlite
-	        php artisan migrate --env=testing
+          name: "Create database and run migration"
+          command: |
+        touch database/database.sqlite
+        php artisan migrate --env=testing1
 
       - run:
           name: "Run Http Tests"
